@@ -1,0 +1,33 @@
+-data structures:
+    board1=[5x5 mat]
+    board2=[5x5 mat]
+-possible element values:
+        'O'-water
+        '*'-boat element
+-example:
+  board1:
+    0 1 2 3 4
+    ---------
+0 | O O O O O
+1 | * O O * *
+2 | * O O O O
+3 | O * O * O
+4 | O * O * O
+
+board2:
+    0 1 2 3 4
+    ---------
+0 | O O O O O
+1 | * O O * *
+2 | * O O O O
+3 | O * O * O
+4 | O * O * O
+
+
+-possible moves:
+    moves=[(0,0),(0,1),....,(4,4)]
+-scoring variable for both players in game.py
+    score1_boats_hit,score1_locations_hit,score2_boats_hit,score2_locations_hit,score1,score2
+-matrix [['O']*5 for i in range(5)] [['O']*5 ]*5
+-element board[x][y] then check
+      ->board[x-1][y] and board[x+1][y]
